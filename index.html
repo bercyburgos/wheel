@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rueda de descuentos</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="app">
+      <img class="marcador" src="marker.png" />
+      <img class="rueda" src="wheel.png" />
+      <img class="button" src="button.png" />
+    </div>
+    <div>
+    <h3 id="user">Jugador:</h3>
+    <input type="text" class ="dato" placeholder="Ingrese el nombre del jugador"/><br>
+    <h3>Cedula o ID:</h3>
+        <input type="Cedula" class="dato" placeholder="Ingrese la cedula o ID"/>
+        <input type="button" value="registrar" onclick="Capturar()">
+    </div>
+    <div class="instrucciones"></div>
+        <h3>Instrucciones</h3>
+        <p>Si la rueda cae en el color azul obtienes 5% de descuento</p>
+        <p>Si la rueda cae en el color rosado obtienes 70% de descuento</p>
+        <p>Si la rueda cae en el color amarillo obtienes 35% de descuento</p>
+        <p>¡Prueba tu suerte! y reclama los descuentos en nuestra web</p>
+    </div>
+    <script src="app.js"></script>
+  </body>

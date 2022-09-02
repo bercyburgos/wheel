@@ -17,11 +17,11 @@
       <img class="button" src="button.png" />
     </div>
     <div>
-    <h3 id="user">Jugador:</h3>
-    <input type="text" class ="dato" placeholder="Ingrese el nombre del jugador"/><br>
-    <h3>Cedula o ID:</h3>
-        <input type="Cedula" class="dato" placeholder="Ingrese la cedula o ID"/>
-        <input type="button" value="registrar" onclick="Capturar()">
+    <form action="" id="form">
+      <input type="text" name="Jugador" id="jugador" placeholder="jugador">
+      <input type="text" name="Identificacion" id="Identificacion" placeholder="ID">
+      <button type="button" onclick="getinfo()">Enviar</button>  
+    </form>
     </div>
     <div class="instrucciones"></div>
         <h3>Instrucciones</h3>

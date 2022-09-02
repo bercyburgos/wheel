@@ -1,4 +1,3 @@
-
 (function() {
   const rueda = document.querySelector('.rueda');
   const startButton = document.querySelector('.button');
@@ -28,6 +27,7 @@
   });
 })();
 
+//se captura la informacion del jugador
 const Capturar = function(){
   let lstNumero = document.getElementsByClassName("input"),
       arrayGuardar = [];         
@@ -36,4 +36,11 @@ const Capturar = function(){
       console.log (lstNumero[i].value);     
       }       
   }
+
+  let getinfo=function(){
+    let name = document.getElementById("jugador").value;
+    let id= document.getElementById("Identificacion")
+    console.log(name+""+id)
+  }
+  
 

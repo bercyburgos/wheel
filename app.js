@@ -27,7 +27,6 @@
   });
 })();
 
-//se captura la informacion del jugador
 const Capturar = function(){
   let lstNumero = document.getElementsByClassName("input"),
       arrayGuardar = [];         
@@ -40,6 +39,8 @@ const Capturar = function(){
   let getinfo=function(){
     let name = document.getElementById("jugador").value;
     let id= document.getElementById("Identificacion")
+    localStorage.setItem(name, name)
+    localStorage.setItem(id,JSON.stringify(id))
     console.log(name+""+id)
   }
   
